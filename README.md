@@ -90,26 +90,6 @@ Quora/
 - **Danger**: Red for delete actions (#fc8181 → #f56565)
 - **Neutral**: Clean whites and grays
 
-## 🚀 Getting Started
-
-### Prerequisites
-- Node.js installed on your system
-- npm (comes with Node.js)
-
-### Installation
-1. Clone the repository
-2. Install dependencies:
-   ```bash
-   npm install
-   ```
-3. Start the server:
-   ```bash
-   node index.js
-   ```
-4. Open your browser and navigate to:
-   ```
-   http://localhost:8080/posts
-   ```
 
 ### Usage
 1. **View Posts** - Main page shows all posts
@@ -190,25 +170,7 @@ Quora/
    - Optimized asset loading
    - Clean HTML structure
 
-## 🎯 Future Enhancements
 
-### Planned Features
-- [ ] User authentication system
-- [ ] Database integration (MongoDB/PostgreSQL)
-- [ ] Real-time comments system
-- [ ] Like/unlike functionality
-- [ ] Search and filtering
-- [ ] User profiles
-- [ ] Image upload support
-- [ ] Pagination for posts
-
-### Technical Improvements
-- [ ] API documentation with Swagger
-- [ ] Unit testing with Jest
-- [ ] Docker containerization
-- [ ] CI/CD pipeline setup
-- [ ] Performance monitoring
-- [ ] Error logging system
 
 
 
