@@ -210,15 +210,7 @@ Quora/
 - [ ] Performance monitoring
 - [ ] Error logging system
 
-## 📝 License
 
-This project is open source and available under the [MIT License](LICENSE).
-
-## 🤝 Contributing
-
-Contributions, issues, and feature requests are welcome! Feel free to check [issues page](../../issues) if you want to contribute.
-
-## 📞 Contact
 
 Created with ❤️ by Nikita
 
