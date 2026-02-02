@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Post Details</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="post-form">
+            <% if(post) { %>
+                <h1>Post Details</h1>
+                <div class="post">
+                    <div class="post-header">
+                        <div class="avatar"><%= post.username.charAt(0).toUpperCase() %></div>
+                        <div class="username"><%= post.username %></div>
+                        <div class="post-id">ID: <%= post.id %></div>
+                    </div>
+                    <div class="post-content"><%= post.content %></div>
+                    <div class="post-meta">
+                        <span>👍 Like</span>
+                        <span>💬 Comment</span>
+                        <span>🔄 Share</span>
+                    </div>
+                </div>
+                <div class="form-footer">
+                    <a href="/posts" class="cancel-btn">← Back to Posts</a>
+                </div>
+            <% } else { %>
+                <h1>Post Not Found</h1>
+                <p>Sorry, this post doesn't exist.</p>
+                <div class="form-footer">
+                    <a href="/posts" class="cancel-btn">← Back to Posts</a>
+                </div>
+            <% } %>
+        </div>
+    </div>
+</body>
+</html>

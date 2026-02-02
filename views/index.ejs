@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Posts</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Quora</h1>
+        <div class="posts-container">
+            <% posts.forEach((post, index) => { %>
+                <div class="post">
+                    <div class="post-header">
+                        <div class="avatar"><%= post.username.charAt(0).toUpperCase() %></div>
+                        <div class="username"><%= post.username %></div>
+                    </div>
+                    <div class="post-content"><%= post.content %></div>
+                    <div class="post-meta">
+                        <span>👍 Like</span>
+                        <span>💬 Comment</span>
+                        <span>🔄 Share</span>
+                        <span><a href="/posts/<%= post.id %>" class="view-post-link">View Post →</a></span>
+                        <span><a href="/posts/<%= post.id %>/edit" class="edit-post-link">Edit Post →</a></span>
+                        <br>
+                        <form action="/posts/<%= post.id %>?_method=DELETE" method="POST">
+                            <button type="submit" class="delete-post-link">Delete Post →</button>
+                        </form>
+                    </div>
+                </div>
+            <% }); %>
+        </div>
+        
+        <div class="create-post-section">
+            <a href="/posts/new" class="create-post-btn">
+                <span class="plus-icon">+</span>
+                Create New Post
+            </a>
+        </div>
+    </div>
+</body>
+</html>
+
